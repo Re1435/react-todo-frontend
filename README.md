@@ -37,44 +37,12 @@ This is a full-stack Todo List application built with React.js for the frontend,
 
 ## Setup Instructions
 
-### Backend
-
-1. **Clone the Repository**:
-
-   ```bash
-   git clone https://github.com/your-username/todo-list-backend.git
-   cd todo-list-backend
-   ```
-
-2. **Install Dependencies**:
-
-   ```bash
-   npm install
-   ```
-
-3. **Create a `.env` File**:
-
-   Create a `.env` file in the root directory and add the following:
-
-   ```env
-   PORT=3001
-   MONGO_URI=your-mongodb-connection-string
-   ```
-
-4. **Run the Server**:
-
-   ```bash
-   npm start
-   ```
-
-   The backend server will be available at `https://react-todo-backend1.onrender.com`.
-
 ### Frontend
 
 1. **Clone the Repository**:
 
    ```bash
-   git clone https://github.com/your-username/todo-list-frontend.git
+   git clone https://github.com/Re1435/react-todo-frontend.git
    cd todo-list-frontend
    ```
 
