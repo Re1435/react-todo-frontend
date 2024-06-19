@@ -1,70 +1,108 @@
-# Getting Started with Create React App
+# Todo List Application
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a full-stack Todo List application built with React.js for the frontend, Node.js for the backend, and MongoDB for the database. The application allows users to add new tasks, mark tasks as completed, delete tasks, and download the task list as a PDF.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Task List Display**:
 
-### `npm start`
+  - Display a list of tasks fetched from the MongoDB database.
+  - Each task has a checkbox to mark it as completed.
+  - Visually distinguish completed tasks.
+  - Download all displayed tasks as a PDF.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Add New Task**:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+  - Provide an input field and a button to add new tasks to the list.
+  - New tasks are saved to the MongoDB database and appear in the task list immediately.
 
-### `npm test`
+- **Delete Task**:
+  - Implement a way to delete tasks from the list.
+  - Deleted tasks are removed from the MongoDB database and disappear from the task list immediately.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Technologies Used
 
-### `npm run build`
+- **Frontend**:
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+  - React.js
+  - Axios for HTTP requests
+  - jsPDF for PDF generation
+  - Tailwind CSS for styling
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- **Backend**:
+  - Node.js
+  - Express.js
+  - MongoDB
+  - Multer for file uploads
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Setup Instructions
 
-### `npm run eject`
+### Backend
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. **Clone the Repository**:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```bash
+   git clone https://github.com/your-username/todo-list-backend.git
+   cd todo-list-backend
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install Dependencies**:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+   ```bash
+   npm install
+   ```
 
-## Learn More
+3. **Create a `.env` File**:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   Create a `.env` file in the root directory and add the following:
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```env
+   PORT=3001
+   MONGO_URI=your-mongodb-connection-string
+   ```
 
-### Code Splitting
+4. **Run the Server**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm start
+   ```
 
-### Analyzing the Bundle Size
+   The backend server will be available at `https://react-todo-backend1.onrender.com`.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Frontend
 
-### Making a Progressive Web App
+1. **Clone the Repository**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+   ```bash
+   git clone https://github.com/your-username/todo-list-frontend.git
+   cd todo-list-frontend
+   ```
 
-### Advanced Configuration
+2. **Install Dependencies**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+   ```bash
+   npm install
+   ```
 
-### Deployment
+3. **Create a `.env` File**:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+   Create a `.env` file in the root directory and add the following:
 
-### `npm run build` fails to minify
+   ```env
+   REACT_APP_API_URL=http://localhost:3001
+   ```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+4. **Run the Application**:
+
+   ```bash
+   npm start
+   ```
+
+   The application will be available at `http://localhost:3000`.
+
+## Usage
+
+1. **Add Task**: Type your task in the input field and click the "ADD" button to add a new task to the list.
+2. **Mark as Completed**: Click the checkbox next to a task to mark it as completed.
+3. **Delete Task**: Click the delete icon next to a task to remove it from the list.
+4. **Download PDF**: Click the "Download PDF" button to download the list of tasks as a PDF file.
