@@ -43,7 +43,7 @@ This is a full-stack Todo List application built with React.js for the frontend,
 
    ```bash
    git clone https://github.com/Re1435/react-todo-frontend.git
-   cd todo-list-frontend
+
    ```
 
 2. **Install Dependencies**:
