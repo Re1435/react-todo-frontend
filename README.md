@@ -89,7 +89,7 @@ This is a full-stack Todo List application built with React.js for the frontend,
    Create a `.env` file in the root directory and add the following:
 
    ```env
-   REACT_APP_API_URL=http://localhost:3001
+   REACT_APP_API_URL=`https://react-todo-backend1.onrender.com`
    ```
 
 4. **Run the Application**:
@@ -98,7 +98,7 @@ This is a full-stack Todo List application built with React.js for the frontend,
    npm start
    ```
 
-   The application will be available at `http://localhost:3000`.
+   The application will be available at `https://react-todo-frontend-tawny.vercel.app`.
 
 ## Usage
 
